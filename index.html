@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aalpha</title>
+    <!-- daisy UI and Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <h1> Hello Aalpha</h1>
+
+<body class="font-poppins">
+
+
+
+    <main class="min-h-screen bg-[#010331] bg-[url(images/background.png)]
+    bg-no-repeat bg-center">
+
+              <!-- Home  -->
+        <section class="home  text-white  flex flex-col justify-center 
+        items-center min-h-screen  ">
+            <div class="flex flex-col gap-7 text-xl   items-center">
+                <h1 class="font-anton uppercase text-8xl ">ALPHABET CLASH</h1>
+                <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn text-[18px] font-bold bg-white hover:bg-wrap text-black
+                 hover:text-white  px-8 py-4">Play Now</button>
+            </div>
+        </section>
+
+
+              <!-- play-ground -->
+        <section class="play-ground hidden  ">
+            <div class="gap-24 flex flex-col justify-center items-centern h-full ">
+                <!-- screen  -->
+                <div class=" pt-24 flex justify-center items-centern h-full ">
+                    <div class=" border-[20px] artboard artboard-horizontal
+                     phone-6 rounded-2xl border-[#010331CC] bg-[#FFFFFFB3]">
+                        <div class="flex justify-center ">
+                            <p class="bg-[#2F2941] px-6 py-2 rounded-b-xl text-white  ">
+                                Don't watch keyboard while playing...
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center h-full">
+                            <p class="text-9xl text-black font-bold">Y</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kyboard -->
+                <div class="text-3xl ">
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                    </div>
+                </div>
+
+                <!-- life line -->
+                <div class="flex justify-evenly items-center">
+                    <button class="btn bg-[#894189] text-2xl rounded-full">
+                        Life
+                        <img src="images/hartd.svg" alt="">
+                        <span>1</span>
+                    </button>
+
+                    <button class="btn bg-[#360490] text-2xl rounded-full">
+                        Score
+                        <img src="images/dolor.svg" alt="">
+                        <span>1</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+            <!-- Score -->
+        <section class="score hidden text-white flex justify-center items-center min-h-screen text-center ">
+            <div class="space-y-7 text-xl bg-[#FFFFFF33] p-16 rounded-2xl">
+                <h1 class="text-8xl">
+                    <span class="font-bold">Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class=" btn text-[18px] font-bold bg-white hover:bg-wrap text-black hover:text-white  px-8 py-4 ">Play Again</button>
+                <p>Practice will make you Pro . .</p>
+            </div>
+        </section>
+    </main>
+
+
+
 </body>
+<script>
+
+</script>
+
 </html>
