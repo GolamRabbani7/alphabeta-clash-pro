@@ -86,16 +86,17 @@
 
                 <!-- life line -->
                 <div class="flex justify-around items-center">
+                    <!-- life  -->
                     <button class="btn bg-[#894189] text-white text-2xl rounded-full">
                         Life
                         <img src="images/hartd.svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                     </button>
-
+                    <!-- Score -->
                     <button class="btn bg-[#360490] text-white text-2xl rounded-full">
                         Score
                         <img src="images/dolor.svg" alt="">
-                        <span>1</span>
+                        <span id="current-score">0</span>
                     </button>
                 </div>
             </div>
@@ -103,13 +104,13 @@
         </section>
 
             <!-- Score -->
-        <section class="score hidden text-white flex justify-center items-center min-h-screen text-center ">
+        <section id="final-score" class="hidden text-white flex justify-center items-center min-h-screen text-center ">
             <div class="space-y-7 text-xl bg-[#FFFFFF33] p-16 rounded-2xl">
                 <h1 class="text-8xl">
                     <span class="font-bold">Score:</span>
-                    <span>14</span>
+                    <span id="score-no">0</span>
                 </h1>
-                <button class=" btn text-[18px] font-bold bg-white hover:bg-wrap text-black hover:text-white  px-8 py-4 ">Play Again</button>
+                <button onclick="playAgain()" id="play-again" class=" btn text-[18px] font-bold bg-white hover:bg-wrap text-black hover:text-white  px-8 py-4 ">Play Again</button>
                 <p>Practice will make you Pro . .</p>
             </div>
         </section>
